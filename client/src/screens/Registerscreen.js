@@ -4,7 +4,6 @@ import axios from 'axios'
 import Success from "../components/Success"
 import Error from "../components/Error"
 import Loader from "../components/Loader"
-import { set } from "mongoose"
 
 
 function Registerscreen() {
