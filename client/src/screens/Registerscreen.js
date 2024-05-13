@@ -28,7 +28,7 @@ function Registerscreen() {
             try {
                 setloading(true)
                 console.log(user);
-                const result = await axios.post('https://luggage-lounge.vercel.app/api/users/register', user, {
+                const result = await axios.post('https://luggage-lounge-server.vercel.app/api/users/register', user, {
                     headers: {
                         "Access-Control-Allow-Origin": "*"
                     }

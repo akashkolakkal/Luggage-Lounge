@@ -34,7 +34,7 @@ function Bookingscreen() {
 
     try {
       setloading(true);
-      const data = (await axios.post(`https://luggage-lounge.vercel.app/api/rooms/getroombyid/${roomid}`)).data;
+      const data = (await axios.post(`https://luggage-lounge-server.vercel.app/api/rooms/getroombyid/${roomid}`)).data;
       
       setroom(data);
       setloading(false);
@@ -60,7 +60,7 @@ function Bookingscreen() {
     }
 
     try {
-      const result = await axios.post('https://luggage-lounge.vercel.app/api/bookings/bookroom' , bookingDetails)
+      const result = await axios.post('https://luggage-lounge-server.vercel.app/api/bookings/bookroom' , bookingDetails)
     } catch (error) {
       
     }

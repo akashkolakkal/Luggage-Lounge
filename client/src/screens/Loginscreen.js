@@ -19,7 +19,7 @@ function Loginscreen() {
 
         try {
             setloading(true)
-            const result =  await axios.post('https://luggage-lounge.vercel.app/api/users/login', user,{
+            const result =  await axios.post('https://luggage-lounge-server.vercel.app/api/users/login', user,{
                 headers: {
                     "Access-Control-Allow-Origin": "*"
                 }

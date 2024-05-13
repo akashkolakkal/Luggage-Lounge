@@ -43,7 +43,7 @@ function Homescreen() {
   useState(async () => {
     try {
       setloading(true);
-      const data = (await axios.get("https://luggage-lounge.vercel.app/api/rooms/getallrooms")).data;
+      const data = (await axios.get("https://luggage-lounge-server.vercel.app/api/rooms/getallrooms")).data;
 
       setrooms(data);
       setduplicaterooms(data)
